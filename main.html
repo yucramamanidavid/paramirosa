@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Ramos de Flores Amarillas para Rosaura</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fff7e6;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1584447475483-5961056fb61e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .greetings {
+            font-size: 3em;
+            color: #ffd700;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .greetings span {
+            display: inline-block;
+            margin: 0 5px;
+            transform: scale(1);
+            animation: bounce 0.6s infinite alternate;
+        }
+        .greetings span:nth-child(1) { animation-delay: 0s; }
+        .greetings span:nth-child(2) { animation-delay: 0.1s; }
+        .greetings span:nth-child(3) { animation-delay: 0.2s; }
+        .greetings span:nth-child(4) { animation-delay: 0.3s; }
+        .greetings span:nth-child(5) { animation-delay: 0.4s; }
+        .description {
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+            background: rgba(255, 215, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            text-align: center;
+        }
+        .botones {
+            background-color: #ffdf00;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .botones:hover {
+            background-color: #ffd700;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .botones a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .credits {
+            position: absolute;
+            bottom: 10px;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .memories {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .memories h2 {
+            font-size: 2em;
+            color: #ffdf00;
+            margin-bottom: 20px;
+        }
+        .memories img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes bounce {
+            to {
+                transform: scale(1.2);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Media queries for small devices */
+        @media (max-width: 600px) {
+            .greetings {
+                font-size: 2.5em;
+            }
+            .description {
+                font-size: 1.2em;
+                padding: 8px 15px;
+            }
+            .botones {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .memories img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <span>F</span>
+        <span>e</span>
+        <span>l</span>
+        <span>i</span>
+        <span>z</span>
+        <span> </span>
+        <span>D</span>
+        <span>í</span>
+        <span>a</span>
+        <span>,</span>
+        <span>R</span>
+        <span>o</span>
+        <span>s</span>
+        <span>a</span>
+        <span>u</span>
+        <span>r</span>
+        <span>a</span>
+        <span>💛</span>
+    </div>
+    <div class="description">
+        <span>Te regalo estas flores amarillas y todo mi amor, como siempre. Eres mi vida y mi luz, Rosaura. 🌻💖</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html">¡Haz clic para sentir mi amor! 🌻💛</a>
+        </button>
+    </div>
+
+    <!-- Memories Section -->
+    <div class="memories">
+        <h2>Nuestros Recuerdos Juntos</h2>
+        <img src="img/123.jpeg" alt="Recuerdo 1">
+        <img src="img/5f08fa89-91a9-4a09-a511-f2513b419a14.jpeg" alt="Recuerdo 2">
+        <img src="img/d1093573-27af-47e1-bc5e-7d6a8b566f10.jpeg" alt="Recuerdo 3">
+    </div>
+
+    <div class="credits">
+        <p>&copy; 2024 Con todo mi amor, para ti, Rosaura. 🌻💛</p>
+    </div>
+</body>
+</html>
