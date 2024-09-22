@@ -24,7 +24,7 @@
             background-attachment: fixed;
         }
         .greetings {
-            font-size: 3em;
+            font-size: 2.5em;
             color: #ffd700;
             font-weight: bold;
             text-align: center;
@@ -43,7 +43,7 @@
         .greetings span:nth-child(4) { animation-delay: 0.3s; }
         .greetings span:nth-child(5) { animation-delay: 0.4s; }
         .description {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #333;
             text-align: center;
             background: rgba(255, 215, 0, 0.7);
@@ -59,11 +59,11 @@
             background-color: #ffdf00;
             border: none;
             color: white;
-            padding: 15px 30px;
+            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 1.2em;
+            font-size: 1em;
             margin: 10px;
             cursor: pointer;
             border-radius: 10px;
@@ -90,12 +90,12 @@
             text-align: center;
         }
         .memories h2 {
-            font-size: 2em;
+            font-size: 1.5em;
             color: #ffdf00;
             margin-bottom: 20px;
         }
         .memories img {
-            width: 200px;
+            width: 150px;
             height: auto;
             border-radius: 10px;
             margin: 10px;
@@ -117,23 +117,26 @@
         /* Media queries for small devices */
         @media (max-width: 600px) {
             .greetings {
-                font-size: 2.5em;
+                font-size: 2em;
             }
             .description {
-                font-size: 1.2em;
+                font-size: 1em;
                 padding: 8px 15px;
             }
             .botones {
-                font-size: 1em;
-                padding: 10px 20px;
+                font-size: 0.9em;
+                padding: 8px 15px;
             }
             .memories img {
-                width: 150px;
+                width: 120px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Música con click -->
+    <audio id="backgroundMusic" src="sound/Y2meta.app - Floricienta — Flores Amarillas [Letra] (320 kbps).mp3"></audio>
+
     <div class="greetings">
         <span>F</span>
         <span>e</span>
@@ -174,5 +177,16 @@
     <div class="credits">
         <p>&copy; 2024 Con todo mi amor, para ti, Rosaura. 🌻💛</p>
     </div>
+
+    <script>
+        // Reproducción de música después de hacer clic
+        window.addEventListener('click', function() {
+            var audio = document.querySelector('#backgroundMusic');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
 </body>
 </html>
+
